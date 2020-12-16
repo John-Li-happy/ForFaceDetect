@@ -56,15 +56,23 @@
 		F27C16B5258AA39B003C7574 /* ForFaceDetect */ = {
 			isa = PBXGroup;
 			children = (
+				F27C16CB258AB076003C7574 /* Controller */,
 				F27C16B6258AA39B003C7574 /* AppDelegate.swift */,
 				F27C16B8258AA39B003C7574 /* SceneDelegate.swift */,
-				F27C16BA258AA39B003C7574 /* ViewController.swift */,
 				F27C16BC258AA39B003C7574 /* Main.storyboard */,
 				F27C16BF258AA39B003C7574 /* Assets.xcassets */,
 				F27C16C1258AA39B003C7574 /* LaunchScreen.storyboard */,
 				F27C16C4258AA39B003C7574 /* Info.plist */,
 			);
 			path = ForFaceDetect;
+			sourceTree = "<group>";
+		};
+		F27C16CB258AB076003C7574 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F27C16BA258AA39B003C7574 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
