@@ -19,6 +19,8 @@ Swift 5.3
 Xcode 12.3
 
 
-<img width="250" alt="Screen Shot 2020-12-16 at 5 24 46 PM" src="https://user-images.githubusercontent.com/63318597/102414459-97ed8e00-3fc4-11eb-8af7-64cb24ed7340.png"><img width="250" alt="Screen Shot 2020-12-16 at 5 25 03 PM" src="https://user-images.githubusercontent.com/63318597/102414467-9c19ab80-3fc4-11eb-997b-a9e8bd82d68b.png">
+<img width="250" alt="Screen Shot 2020-12-16 at 5 24 46 PM" src="https://user-images.githubusercontent.com/63318597/102414459-97ed8e00-3fc4-11eb-8af7-64cb24ed7340.png">
 
 <img width="250" alt="Screen Shot 2020-12-16 at 5 25 12 PM" src="https://user-images.githubusercontent.com/63318597/102414480-a0de5f80-3fc4-11eb-8128-78fd5d335e57.png">
+
+<img width="250" alt="Screen Shot 2020-12-16 at 5 25 26 PM" src="https://user-images.githubusercontent.com/63318597/102414790-1b0ee400-3fc5-11eb-9712-c26e1af386f3.png">
