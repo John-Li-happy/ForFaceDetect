@@ -13,7 +13,7 @@ Vision
 
 Resnet50
 
-Machine Learning
+CoreML
 
 
 ## Todos
@@ -39,4 +39,4 @@ The main purpose of this project is to bring enjoyment to those who have spare t
 
 <img width="240" alt="Screen Shot 2020-12-16 at 5 24 46 PM" src="https://user-images.githubusercontent.com/63318597/102414459-97ed8e00-3fc4-11eb-8af7-64cb24ed7340.png"> 
 
-![ObjectDetecterGif](https://user-images.githubusercontent.com/63318597/102939902-20fd3d00-447d-11eb-8561-7d837b2ebf95.gif)
+![ObjectDetecter](https://user-images.githubusercontent.com/63318597/102940147-a5e85680-447d-11eb-8536-939db7ca86ff.gif)
