@@ -22,6 +22,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>WeNeedIt</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>DetectFaces</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -20,9 +20,34 @@
                                 <rect key="frame" x="87" y="344" width="124" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODH-nS-fhP">
+                                <rect key="frame" x="0.0" y="752.5" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deE-fY-4yT">
+                                <rect key="frame" x="5" y="778" width="404" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AJu-QS-IGn"/>
+                                </constraints>
+                                <state key="normal" title="import"/>
+                                <connections>
+                                    <action selector="importButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yzq-wW-KoS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="deE-fY-4yT" secondAttribute="trailing" constant="5" id="EF0-d3-Nyh"/>
+                            <constraint firstItem="deE-fY-4yT" firstAttribute="top" secondItem="ODH-nS-fhP" secondAttribute="bottom" constant="5" id="NgA-EL-kFC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ODH-nS-fhP" secondAttribute="trailing" id="fhl-Hr-Qlq"/>
+                            <constraint firstItem="deE-fY-4yT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="hw3-j4-kCf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="deE-fY-4yT" secondAttribute="bottom" constant="5" id="owe-0f-ZcY"/>
+                            <constraint firstItem="ODH-nS-fhP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qy0-AN-nss"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Image" id="Zk2-8Y-z6p"/>
                     <connections>
@@ -32,6 +57,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1255" y="1180"/>
+        </scene>
+        <!--LiveFace-->
+        <scene sceneID="P3X-CB-rLU">
+            <objects>
+                <viewController id="7Ev-Nq-1Cc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BQn-Fi-YoS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="naT-x8-2bJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="LiveFace" id="E36-ZE-KhK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0kY-a3-0Y1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-320" y="1180"/>
         </scene>
         <!--Camera-->
         <scene sceneID="3uj-T4-ST1">
@@ -66,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBQ-cj-3Hd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="1180"/>
+            <point key="canvasLocation" x="574" y="1180"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KyR-Dj-VNZ">
@@ -81,6 +122,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Etg-rJ-4qF"/>
                         <segue destination="PH3-k1-X5Y" kind="relationship" relationship="viewControllers" id="Mst-KJ-Bxb"/>
+                        <segue destination="7Ev-Nq-1Cc" kind="relationship" relationship="viewControllers" id="ljb-IW-vb1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wgw-sW-2iQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -89,6 +131,12 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

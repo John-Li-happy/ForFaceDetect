@@ -7,17 +7,35 @@
 
 import UIKit
 import Vision
+import CoreML
 
-class ImageCapViewController: UIViewController {
+class ImageCapViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initialImageViewSettings()
-        initialFaceDetector()
     }
-        
+    
+    @IBAction func importButtonTapped(_ sender: UIButton) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            imageView.image = image
+        }
+        for subview in imageView.subviews {
+            subview.removeFromSuperview()
+        }
+        initialFaceDetector()
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     private func initialImageViewSettings() {
         let image = UIImage(imageLiteralResourceName: "mount")
         imageView.image = image
@@ -28,6 +46,7 @@ class ImageCapViewController: UIViewController {
         let scaleHeight = image.size.height / scale
         
         imageView.frame = CGRect(x: 0, y: (view.frame.height - scaleHeight) / 2, width: self.view.frame.width, height: scaleHeight)
+        initialFaceDetector()
     }
     
     private func initialFaceDetector() {
@@ -51,7 +70,6 @@ class ImageCapViewController: UIViewController {
                 redView.alpha = 0.4
                 redView.frame = CGRect(x: x, y: y, width: w, height: h)
                 self.imageView.addSubview(redView)
-                
             })
         }
         
