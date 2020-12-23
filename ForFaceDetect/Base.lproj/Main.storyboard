@@ -20,12 +20,6 @@
                                 <rect key="frame" x="87" y="344" width="124" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODH-nS-fhP">
-                                <rect key="frame" x="0.0" y="752.5" width="414" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deE-fY-4yT">
                                 <rect key="frame" x="5" y="778" width="404" height="30"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -42,11 +36,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="deE-fY-4yT" secondAttribute="trailing" constant="5" id="EF0-d3-Nyh"/>
-                            <constraint firstItem="deE-fY-4yT" firstAttribute="top" secondItem="ODH-nS-fhP" secondAttribute="bottom" constant="5" id="NgA-EL-kFC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ODH-nS-fhP" secondAttribute="trailing" id="fhl-Hr-Qlq"/>
                             <constraint firstItem="deE-fY-4yT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="hw3-j4-kCf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="deE-fY-4yT" secondAttribute="bottom" constant="5" id="owe-0f-ZcY"/>
-                            <constraint firstItem="ODH-nS-fhP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qy0-AN-nss"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Image" id="Zk2-8Y-z6p"/>
@@ -61,7 +52,7 @@
         <!--LiveFace-->
         <scene sceneID="P3X-CB-rLU">
             <objects>
-                <viewController id="7Ev-Nq-1Cc" sceneMemberID="viewController">
+                <viewController id="7Ev-Nq-1Cc" customClass="LiveViewController" customModule="ForFaceDetect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BQn-Fi-YoS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +68,7 @@
         <!--Camera-->
         <scene sceneID="3uj-T4-ST1">
             <objects>
-                <viewController title="Camera" id="PH3-k1-X5Y" customClass="RealTimeViewController" customModule="ForFaceDetect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Camera" id="PH3-k1-X5Y" customClass="OnjectViewController" customModule="ForFaceDetect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6pC-fn-Kvw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

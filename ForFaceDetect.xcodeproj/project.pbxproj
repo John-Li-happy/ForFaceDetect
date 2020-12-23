@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F26CDE8C2593D8F000DBA8E6 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26CDE8B2593D8F000DBA8E6 /* LiveViewController.swift */; };
 		F27C16B7258AA39B003C7574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C16B6258AA39B003C7574 /* AppDelegate.swift */; };
 		F27C16B9258AA39B003C7574 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C16B8258AA39B003C7574 /* SceneDelegate.swift */; };
 		F27C16BB258AA39B003C7574 /* ImageCapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27C16BA258AA39B003C7574 /* ImageCapViewController.swift */; };
 		F27C16BE258AA39B003C7574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27C16BC258AA39B003C7574 /* Main.storyboard */; };
 		F27C16C0258AA39B003C7574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27C16BF258AA39B003C7574 /* Assets.xcassets */; };
 		F27C16C3258AA39B003C7574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27C16C1258AA39B003C7574 /* LaunchScreen.storyboard */; };
-		F2C85E3025929D04006EE60C /* RealTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C85E2F25929D04006EE60C /* RealTimeViewController.swift */; };
+		F2C85E3025929D04006EE60C /* OnjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C85E2F25929D04006EE60C /* OnjectViewController.swift */; };
 		F2C85E352592A366006EE60C /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F2C85E342592A366006EE60C /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F26CDE8B2593D8F000DBA8E6 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		F27C16B3258AA39B003C7574 /* ForFaceDetect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForFaceDetect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27C16B6258AA39B003C7574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F27C16B8258AA39B003C7574 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +28,7 @@
 		F27C16BF258AA39B003C7574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F27C16C2258AA39B003C7574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F27C16C4258AA39B003C7574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2C85E2F25929D04006EE60C /* RealTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeViewController.swift; sourceTree = "<group>"; };
+		F2C85E2F25929D04006EE60C /* OnjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnjectViewController.swift; sourceTree = "<group>"; };
 		F2C85E342592A366006EE60C /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				F27C16BA258AA39B003C7574 /* ImageCapViewController.swift */,
-				F2C85E2F25929D04006EE60C /* RealTimeViewController.swift */,
+				F26CDE8B2593D8F000DBA8E6 /* LiveViewController.swift */,
+				F2C85E2F25929D04006EE60C /* OnjectViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -153,8 +156,9 @@
 			files = (
 				F2C85E352592A366006EE60C /* Resnet50.mlmodel in Sources */,
 				F27C16BB258AA39B003C7574 /* ImageCapViewController.swift in Sources */,
-				F2C85E3025929D04006EE60C /* RealTimeViewController.swift in Sources */,
+				F2C85E3025929D04006EE60C /* OnjectViewController.swift in Sources */,
 				F27C16B7258AA39B003C7574 /* AppDelegate.swift in Sources */,
+				F26CDE8C2593D8F000DBA8E6 /* LiveViewController.swift in Sources */,
 				F27C16B9258AA39B003C7574 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

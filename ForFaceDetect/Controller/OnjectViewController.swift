@@ -9,7 +9,7 @@ import UIKit
 import AVKit
 import Vision
 
-class RealTimeViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
+class OnjectViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
     @IBOutlet weak var resultLabel: UILabel!
     

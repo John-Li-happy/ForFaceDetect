@@ -7,7 +7,6 @@
 
 import UIKit
 import Vision
-import CoreML
 
 class ImageCapViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
