@@ -9,6 +9,8 @@ UIkit
 
 TabBarController
 
+AVFoundataion
+
 Vision
 
 Resnet50
