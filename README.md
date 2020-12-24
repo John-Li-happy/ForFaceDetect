@@ -38,7 +38,7 @@ Xcode 12.3
 
 Can not run on simulators
 
-Could only deployed after iOS.9.0
+Could only deployed after iOS9.0
 
 ## Permission
 The main purpose of this project is to bring enjoyment to those who have spare time to cut, also to offer a good chance for developers who is also interested in iOS developing to discuss. This is an open source project, but it is not allowed to use it as any commercial-purposes.
